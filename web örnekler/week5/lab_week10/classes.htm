@@ -1,0 +1,21 @@
+<!-- saved from url=(0014)about:internet -->
+
+<script>
+function Employee(name, salary)
+{
+  this.name = name;       // add Name key/value pair, with value name
+  this.salary = salary;   // add Salary key/value pair, with value salary
+}
+
+Employee.prototype.issuePaycheck = function()   // add issuePaycheck key/value pair…
+  {
+    var monthly = this.salary / 12;
+    document.write(this.name + ": " + monthly);
+  };
+
+var emp = new Employee("Fred", 100000);
+emp.issuePaycheck();
+var emp2 = new Employee("Alicia", 900000);
+emp2.issuePaycheck();
+
+</script>

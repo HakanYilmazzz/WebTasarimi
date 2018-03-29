@@ -1,0 +1,136 @@
+<!-- saved from url=(0014)about:internet -->
+
+<script>
+/*
+  var thisIsAVariableDeclaration = 1;
+  var x = 10;
+  var y = "hi";
+  var z = true;
+  
+  document.write(x + y + z);
+  document.write("<br />");
+  
+  //thisIsAVariableDeclaaration = 2;
+  document.write(thisIsAVariableDeclaration);
+  document.write("<br />");
+  
+  
+  var a = x;  
+  x = y;
+  y = !z;
+  z = a;
+  
+  document.write(x + y + z);
+  document.write("<hr />");
+  
+  
+  var someArray = [10, 20, 30, 40, 50];
+
+  document.write( someArray["3"] );  // 40
+  document.write("<br />");
+	
+  for (var i in someArray)  // indices are strings!
+	document.write( typeof(i)); 
+  document.write("<hr />");
+
+
+
+
+function sumAll(someArray)
+{
+	var sum = 0;
+	
+	for (var i in someArray)
+		sum += someArray[i];
+		
+	return sum;
+}
+
+var arr = [1,2,3,4,5];
+document.write(sumAll(arr));
+document.write("<br />");
+
+function applyToAll(F, C)
+{
+  for (var i in C)
+    F( C[i] );
+}
+
+// alert each element of the given array:
+function alertAll(someArray)
+{ applyToAll(alert, someArray); }
+
+// another way to write the above, demonstrating JavaScript's flexibility:
+function alertAll_v2(someArray)
+{ applyToAll(new Function("e", "alert(e);"), someArray); }
+
+// returns sum of all elements in the given array:
+function sumAll2(someArray)
+{
+  var temp = 0.0;
+  applyToAll(function (e) { temp += e; }, someArray);
+  return temp;
+}
+
+var rg = [0,1,2,3];
+//alertAll(rg);
+
+document.write(sumAll2(rg));
+document.write("<hr />");
+*/
+
+
+function GetIncrementFunc(incBy)
+{
+	var sum = 0;
+	return function() { sum += incBy; return sum; }
+}
+
+var f = GetIncrementFunc(3);
+document.write(f());
+document.write("<br />");
+document.write(f());
+document.write("<br />");
+document.write(f());
+document.write("<hr />");
+
+var g = GetIncrementFunc(2);
+document.write(g());
+document.write("<br />");
+document.write(g());
+document.write("<br />");
+document.write(g());
+document.write("<br />");
+
+document.write("<hr />");
+
+document.write(f());
+document.write("<br />");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</script>
