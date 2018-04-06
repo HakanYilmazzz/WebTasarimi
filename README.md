@@ -1,1 +1,1 @@
-# WebTasarimi
+# WebTasarimi Ders Notları ve ödevler
